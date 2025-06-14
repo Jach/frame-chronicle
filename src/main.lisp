@@ -153,7 +153,7 @@
                    (list frame-num id-values))))))
 
 (defun clear ()
-  "Clears all stored data and resets the frame counter to -1 so that it will be 0 on the next #'frame-tick."
+  "Clears all stored data and resets the frame counter to -1 so that after the next #'frame-tick recording will be back on starting frame 0."
   (bt:with-lock-held ((mutex *store*))
     (setf (data *store*) (make-hash-table :test #'equal)
           (current-frame *store*) -1)))
