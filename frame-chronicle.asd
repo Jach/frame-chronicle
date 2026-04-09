@@ -1,4 +1,4 @@
-(asdf:defsystem "com.thejach.frame-chronicle"
+(asdf:defsystem "frame-chronicle"
   :description "A simple thread-safe way to collect game state on specific frames"
   :version "0.1.0"
   :author "Jach <github@thejach.com>"
@@ -7,10 +7,10 @@
   :serial t
   :pathname "src"
   :components ((:file "main"))
-  :in-order-to ((asdf:test-op (asdf:test-op "com.thejach.frame-chronicle/test"))))
+  :in-order-to ((asdf:test-op (asdf:test-op "frame-chronicle/test"))))
 
-(asdf:defsystem "com.thejach.frame-chronicle/test"
-  :depends-on ("com.thejach.frame-chronicle"
+(asdf:defsystem "frame-chronicle/test"
+  :depends-on ("frame-chronicle"
                "fiveam")
   :serial t
   :pathname "test"

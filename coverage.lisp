@@ -2,7 +2,7 @@
 Run tests + generate coverage report, use sbcl --script coverage.lisp
 |#
 (in-package #:cl-user)
-(defvar *system* "com.thejach.frame-chronicle")
+(defvar *system* "frame-chronicle")
 (defvar *test-system* (uiop:strcat *system* "/test"))
 
 #-quicklisp

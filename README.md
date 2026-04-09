@@ -1,12 +1,12 @@
 # Frame Chronicle
 
-Just a simple lib I wrote to help me debug some of my game code projects.
+This is just a few simple functions I wrote to help me debug some of my game code projects.
 The idea is you specify which frames you want to enable recording for, and then
-put record statements around your code. Later on you run queries to get it out
+insert `record` statements throughout your code. Later on you run queries to get it out
 and inspect. Example usage:
 
 ```lisp
-; add "com.thejach.frame-chronicle" to your ASD dependencies or quickload it
+; add "frame-chronicle" to your ASD dependencies or quickload it
 ; after cloning the repo to somewhere quicklisp can see it.
 
 ; in your defpackage, a suggested nickname:
