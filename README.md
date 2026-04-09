@@ -1,4 +1,5 @@
 # Frame Chronicle
+[![Build Status](https://jenkins.thejach.com/buildStatus/icon?job=frame-chronicle&style=plastic)](https://jenkins.thejach.com/job/frame-chronicle/)
 
 This is just a few simple functions I wrote to help me debug some of my game code projects.
 The idea is you specify which frames you want to enable recording for, and then
