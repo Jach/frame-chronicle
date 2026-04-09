@@ -1,10 +1,13 @@
 # Frame Chronicle
 [![Build Status](https://jenkins.thejach.com/buildStatus/icon?job=frame-chronicle&style=plastic)](https://jenkins.thejach.com/job/frame-chronicle/)
 
-This is just a few simple functions I wrote to help me debug some of my game code projects.
-The idea is you specify which frames you want to enable recording for, and then
-insert `record` statements throughout your code. Later on you run queries to get it out
-and inspect. Example usage:
+This project is just made of a few simple functions to help record and debug
+game code projects. The idea is to specify which frames you want to enable
+recording for, and then insert `record` calls throughout your code as needed.
+Later on when you please, you call `query` to get the data out and inspect.
+Locks are used to make operations thread-safe.
+
+Example usage:
 
 ```lisp
 ; add "frame-chronicle" to your ASD dependencies or quickload it
